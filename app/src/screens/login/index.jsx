@@ -1,6 +1,6 @@
 import React from 'react'
-import LoginForm from './components/loginForm'
+import LoginFormContainer from './container/loginFormContainer'
 
 export default function Index() {
-  return <LoginForm />
+  return <LoginFormContainer />
 }

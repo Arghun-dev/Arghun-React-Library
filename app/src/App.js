@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.css'
-import Login from './screens/login'
+import AuthProvider from './context/Login/authContext'
+import MainRoutes from './routes/mainRoutes'
 
 function App() {
   return (
-    <div className='App'>
-      <Login />
-    </div>
+    <AuthProvider>
+      <MainRoutes />
+    </AuthProvider>
   )
 }
 
