@@ -12,9 +12,9 @@ export default function MainRoutes() {
             <Suspense fallback={<div>Loading...</div>}>
                 <Switch>
                     {token.length > 0 ?
-                        <Route path="/home" component={Home} />
+                        <Route path='/home' component={Home} />
                         :
-                        <Route exact path="/" component={Login} />
+                        <Route exact path='/' component={Login} />
                     }
                 </Switch>
             </Suspense>

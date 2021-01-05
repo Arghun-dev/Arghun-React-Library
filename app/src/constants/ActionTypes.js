@@ -1,0 +1,4 @@
+// message states
+export const SUCCESS = 'SUCCESS'
+export const ERROR = 'ERROR'
+export const LOADING = 'LOADING'
