@@ -17,13 +17,13 @@ export default function LoginFormContainer(props) {
   const [res, fnc] = usePost({ url: loginURL, payload: loginPayload })
 
   return (
-    <LoginFormView 
-      loginRes={res} 
-      loginFnc={fnc} 
-      userName={userName} 
-      setUserName={setUserName} 
-      password={password} 
-      setPassword={setPassword} 
+    <LoginFormView
+      loginRes={res}
+      loginFnc={fnc}
+      userName={userName}
+      setUserName={setUserName}
+      password={password}
+      setPassword={setPassword}
     />
   )
 }
@@ -34,5 +34,4 @@ LoginFormView.propTypes = {
   setUserName: PropTypes.fnc,
   setPassword: PropTypes.fnc,
   loginRes: PropTypes.any,
-
 }
