@@ -1,4 +1,3 @@
-import { func } from 'prop-types'
 import React, { createContext } from 'react'
 import PropTypes from 'prop-types'
 import API from '../../config/api'

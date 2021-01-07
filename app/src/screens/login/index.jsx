@@ -7,5 +7,5 @@ export default function Index() {
     <Provider>
       <LoginFormContainer />
     </Provider>
-  ) 
+  )
 }
