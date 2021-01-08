@@ -22,7 +22,7 @@ export default function usePost({ url, payload, Reload, condition }) {
           .post(url, payload, config)
           .then((response) => {
             setRes({ data: response.data, isLoading: false, error: null })
-            messageDispatch({ type: SUCCESS, message: res.data.message })
+            messageDispatch({ type: SUCCESS, message: response.data.message })
             Reload()
           })
           .catch((err) => {
@@ -39,7 +39,10 @@ export default function usePost({ url, payload, Reload, condition }) {
         .post(url, payload, config)
         .then((response) => {
           setRes({ data: response.data, isLoading: false, error: null })
-          messageDispatch({ type: SUCCESS, message: res.data.message })
+          messageDispatch({
+            type: SUCCESS,
+            message: response.data.message ? response.data.message : 'success',
+          })
           Reload()
         })
         .catch((err) => {

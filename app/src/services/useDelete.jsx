@@ -20,7 +20,7 @@ export default function useDelete({ url, payload, Reload }) {
       .delete(url, config, payload)
       .then((response) => {
         setRes({ data: response.data, isLoading: false, error: null })
-        EventDispatch({ type: SUCCESS, message: res.data.message })
+        EventDispatch({ type: SUCCESS, message: response.data.message })
         Reload()
       })
       .catch((err) => {

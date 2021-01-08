@@ -20,7 +20,7 @@ export default function usePut({ url, payload, Reload }) {
       .put(url, payload, config)
       .then((response) => {
         setRes({ data: response.data, isLoading: false, error: null })
-        messageDispatch({ type: SUCCESS, message: res.data.message })
+        messageDispatch({ type: SUCCESS, message: response.data.message })
         Reload()
       })
       .catch((err) => {

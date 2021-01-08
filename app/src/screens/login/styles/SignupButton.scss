@@ -6,11 +6,19 @@
   border: none;
   padding: .8rem 1rem;
   box-shadow: 0 5px 15px rgba(0,0,0,.15);
+  transition: all .4s;
   cursor: pointer;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
 
   &:focus {
     outline: none;

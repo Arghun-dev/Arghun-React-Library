@@ -2,15 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Input } from '../../../components/index'
 import { LoginFormCard, LoginButton, LoginHeader } from '../components'
+// import { singInWithGoogle } from '../../../firebase/firebase.utils'
 import '../styles/loginPresent.scss'
 
 export default function LoginPresent({
   userName,
-  password,
   setUserName,
+  password,
   setPassword,
-  // loginRes,
-  // loginFnc
+  loginFnc,
+  loginRes,
 }) {
   return (
     <div className='LoginPresent_Container'>
@@ -37,8 +38,15 @@ export default function LoginPresent({
           label='Password'
           style={{ marginBottom: '2rem' }}
         />
-        <LoginButton text='Login' />
+        <LoginButton
+          text='Login'
+          action={loginFnc}
+          loading={loginRes?.isLoading}
+        />
       </LoginFormCard>
+      <p className='LoginPresent_Footer'>
+        LET&apos;S MAKE THE WORLD MORE PRODUCTIVE, TOGETHER.
+      </p>
     </div>
   )
 }
@@ -48,6 +56,6 @@ LoginPresent.propTypes = {
   setUserName: PropTypes.func.isRequired,
   password: PropTypes.string.isRequired,
   userName: PropTypes.string.isRequired,
-  // loginRes: PropTypes.string.isRequired,
-  // loginFnc: PropTypes.func.isRequired,
+  loginFnc: PropTypes.func.isRequired,
+  loginRes: PropTypes.instanceOf(Array).isRequired,
 }
