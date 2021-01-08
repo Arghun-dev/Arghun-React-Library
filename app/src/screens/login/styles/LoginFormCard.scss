@@ -1,0 +1,19 @@
+.LoginFormCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    width: 25rem;
+    border-radius: 5px;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 1.2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 0 25px 75px rgba(16,30,54,.25);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

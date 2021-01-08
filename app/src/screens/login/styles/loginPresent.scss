@@ -1,0 +1,17 @@
+.LoginPresent_Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .loginPresent_Header {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .loginForm_header {
+    color: #292D34;
+  }
+}
+

@@ -2,9 +2,9 @@ import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import { usePost } from '../../../services'
 import { Context } from '../context'
-import LoginFormPresent from '../presentation/loginFormPresent'
+import LoginPresent from '../presentation/LoginPresent'
 
-export default function LoginFormContainer() {
+export default function LoginContainer() {
   const { loginURL } = useContext(Context)
   const [userName, setUserName] = useState('')
   const [password, setPassword] = useState('')
@@ -17,7 +17,7 @@ export default function LoginFormContainer() {
   const [res, fnc] = usePost({ url: loginURL, payload: loginPayload })
 
   return (
-    <LoginFormPresent
+    <LoginPresent
       loginRes={res}
       loginFnc={fnc}
       userName={userName}
@@ -28,7 +28,7 @@ export default function LoginFormContainer() {
   )
 }
 
-LoginFormPresent.propTypes = {
+LoginPresent.propTypes = {
   userName: PropTypes.string.isRequired,
   password: PropTypes.string.isRequired,
   setUserName: PropTypes.fnc,

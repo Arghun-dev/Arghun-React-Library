@@ -1,0 +1,25 @@
+.LoginHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F6F6;
+  color: #292D34;
+
+  &_title {
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    font-weight: bolder;
+  }
+
+  &_right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+
+    &_text {
+      color: #55585E;
+      font-weight: lighter;
+    }
+  }
+}

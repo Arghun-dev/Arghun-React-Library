@@ -1,0 +1,59 @@
+.Input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #E9EBF0;
+  padding: 2%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.label { 
+  align-self: flex-start;
+  color: #292D34;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-left: -8px;
+}
+
+// icon placeholder
+.Input::-webkit-input-placeholder { 
+  font-size: 1.2rem;
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: #B9BEC7;
+}
+
+.Input::-moz-placeholder  { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: #B9BEC7;
+}
+
+.Input:-ms-input-placeholder  { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color:#B9BEC7;
+}

@@ -1,0 +1,24 @@
+.LoginButton {
+  background-color: #7B68EE;
+  border-radius: 4px;
+  color: white;
+  padding: 3%;
+  width: 104.5%;
+  margin-bottom: 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all .4s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  &:hover {
+    background-color: #5F48EA;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}

@@ -1,11 +1,14 @@
 import React from 'react'
-import LoginFormContainer from './container/loginFormContainer'
+import LoginContainer from './container/LoginContainer'
 import Provider from './context'
+import './styles/loginPage.scss'
 
 export default function Index() {
   return (
     <Provider>
-      <LoginFormContainer />
+      <div className='loginPage'>
+        <LoginContainer />
+      </div>
     </Provider>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './styles/Card.css'
+import './styles/Card.scss'
 
 export default function Grid({ children }) {
-  return <div className='root'>{children}</div>
+  return <div className='Grid'>{children}</div>
 }
 
 Grid.propTypes = {
