@@ -1,10 +1,5 @@
 import React, { Suspense, lazy, useContext } from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Redirect,
-  Route,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { AuthContext } from '../context/Login/authContext'
 import { GoogleAuthContext } from '../context/Login/googleAuthContext'
 
@@ -19,7 +14,7 @@ export default function MainRoutes() {
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           {token?.length > 0 || currentUser ? (
-            <Redirect to='/home' component={Home} />
+            <Route to='/home' component={Home} />
           ) : (
             <Route to='/' component={Login} />
           )}
