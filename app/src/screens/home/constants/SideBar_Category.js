@@ -1,12 +1,14 @@
 export const SideBarCategories = [
   {
     id: 1,
-    name: 'React Basic',
+    name: 'Home',
     icon: 'fas fa-home',
+    tooltipText: 'Home',
   },
   {
     id: 2,
-    name: 'Advanced Concept',
+    name: 'React Bits',
     icon: 'fab fa-react',
+    tooltipText: 'React Bits',
   },
 ]

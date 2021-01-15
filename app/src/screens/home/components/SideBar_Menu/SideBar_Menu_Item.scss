@@ -1,0 +1,26 @@
+.SideBarMenu_Item {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #ffffff;
+  color: #9F9F9F;
+  list-style: none;
+  font-size: 85%;
+  // padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  &:hover {
+    background-color: #F6F7FB;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.link {
+  text-decoration: none;
+}

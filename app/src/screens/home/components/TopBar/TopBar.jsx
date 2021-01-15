@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { SelectedSideMenuContext } from '../../contexts/SelectedSideMenu_Context'
 import './TopBar.scss'
 
 export default function TopBar() {
-  return <div className='Top_Bar'>sdsad</div>
+  const { selectedSideMenu } = useContext(SelectedSideMenuContext)
+  return <div className='Top_Bar'>{selectedSideMenu}</div>
 }

@@ -1,4 +1,20 @@
+.SideBar_Menu_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 19rem;
+}
+
 .SideBar_Menu {
   background-color: #FFFFFF;
-  width: 10%;
+  padding-left: 0;
+  height: 100%;
+  overflow-y: scroll;
+
+  &_SubHead {
+    color: #6A6A6A;
+    margin-bottom: 0;
+    padding-left: .5rem;
+  }
 }
